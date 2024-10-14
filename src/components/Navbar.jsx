@@ -15,9 +15,9 @@ function Navbar() {
     return (
         <div className="navbar">
             <div className='navbar-left'>
-                <img src={king} />
+                <img src={king} alt='king crown' />
                 <h2>RoyalTy Demands</h2>
-                <img src={queen} alt='' />
+                <img src={queen} alt='queen crown' />
             </div>
             <div className='navbar-middle'>
                 <ul>
@@ -27,7 +27,7 @@ function Navbar() {
                 </ul>
             </div>
             <div className='navbar-right'>
-                { theme === "light" ? <img src={sun} alt='' onClick={() => {setTheme("dark")}} /> : <img src={moon} alt='' onClick={() => {setTheme("light")}} />}
+                { theme === "light" ? <img src={sun} alt='sun for the light theme' onClick={() => {setTheme("dark")}} /> : <img src={moon} alt='moon for the dark theme' onClick={() => {setTheme("light")}} />}
                 { theme === "light" ? <img src={cart} alt='' /> : <img src={cart_outline} alt='' />}
             </div>
         </div>

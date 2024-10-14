@@ -3,6 +3,27 @@
     src: url(../../public/FiraSans-Regular.ttf);
 }
 
+:root[data-theme="light"] {
+    --text: #1b1316;
+    --background: #f4f0f1;
+    --primary: #4b353e;
+    --secondary: #b7a29a;
+    --accent: #806d5b;
+}
+:root[data-theme="dark"] {
+    --text: #ece4e7;
+    --background: #0f0b0c;
+    --primary: #cab4bd;
+    --secondary: #655048;
+    --accent: #a4917f;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+}
+  
+
 * {
     padding: 0;
     margin: 0;
