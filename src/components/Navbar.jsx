@@ -11,6 +11,20 @@ function Navbar() {
 
     const [theme, setTheme] = useState("light");
 
+    function handleClick() {
+        const navbar = document.querySelector(".navbar");
+
+        if (theme === "light") {
+            setTheme("dark");
+            navbar.classList.remove("navbar-light");
+            navbar.classList.add("navbar-dark");
+        } else if (theme === "dark") {
+            setTheme("light");
+            navbar.classList.remove("navbar-dark");
+            navbar.classList.add("navbar-light");
+        }
+    }
+
 
     return (
         <div className="navbar">
@@ -27,7 +41,7 @@ function Navbar() {
                 </ul>
             </div>
             <div className='navbar-right'>
-                { theme === "light" ? <img src={sun} alt='sun for the light theme' onClick={() => {setTheme("dark")}} /> : <img src={moon} alt='moon for the dark theme' onClick={() => {setTheme("light")}} />}
+                { theme === "light" ? <img src={sun} alt='sun for the light theme' onClick={handleClick} /> : <img src={moon} alt='moon for the dark theme' onClick={handleClick} />}
                 { theme === "light" ? <img src={cart} alt='' /> : <img src={cart_outline} alt='' />}
             </div>
         </div>
