@@ -10,13 +10,7 @@ function useProducts(url) {
 
     useEffect(() => {
         fetch(url, {mode: 'cors'})
-            .then((response) => {
-                if (!response.ok) {
-                    setError(true);
-                    throw new Error('No response');
-                }
-                return response.json();
-            })
+            .then((response) => response.json())
             .then(response => setProducts(response))
             .catch((error) => {
                 console.error('Error getting products: ', error);

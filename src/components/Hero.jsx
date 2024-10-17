@@ -1,5 +1,5 @@
 import './Hero.css';
-import useProducts from './Products';
+import useProducts from '../hooks/Products';
 import { Link } from 'react-router-dom';
 
 function Hero() {
@@ -19,7 +19,7 @@ function Hero() {
                 </div>
             </div>
             <div className='right-side'>
-                <img />
+                <img src={frontItem.image} />
             </div>
         </div>
     )
