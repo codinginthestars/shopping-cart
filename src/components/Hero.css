@@ -1,0 +1,42 @@
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 50px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+.left-side {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-caption {
+    margin-top: 200px;
+}
+
+.hero-caption h1 {
+    font-size: 40px;
+    letter-spacing: 4px;
+}
+
+.link {
+    margin-top: 50px;
+}
+
+.page-link {
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    background-color: #6e5e5d;
+    padding: 5px 8px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.right-side img {
+    width: 400px;
+}
